@@ -20,14 +20,14 @@
 
     <script>
         function initMap() {
-
-            const destinations_json = "DESTINATIONS_COLLECTION"
-            const flightPaths_json = "FLIGHTPATHS_COLLECTION"
+            //Json Collections of airports and flights
+            const destinations = "DESTINATIONS_COLLECTION"
+            const flightPaths = "FLIGHTPATHS_COLLECTION"
 
             let bounds = new google.maps.LatLngBounds(); // Create a LatLngBounds object
             let map = new google.maps.Map(document.getElementById('map'));
 
-            flightPaths_json.forEach((flightPath, j) => {
+            flightPaths.forEach((flightPath, j) => {
                 let path = new google.maps.Polyline({
                     path: [flightPath.origin, flightPath.destination],
                     geodesic: true,
