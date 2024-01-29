@@ -1,10 +1,16 @@
-# FlightMaps
+FlightMaps
+==========
 
-FlightMaps is a project allowing a users to add a list of destinations and flights, and have those flights plotted on a map
+Flights provides a simple HTML template for creating a map with flights plotted between arrival and destination. 
 
 
-## Usage
+Usage
+-----
 
-A template provide HTML for a google map, and scripts to add map lines for the flights.
-A user will have code retrieve the template, replace placeholde variables with required data, and then open the resultant HTML.
+Local and third party applications may download the HTML template to create a map view with the user's desired set of flights.
 
+Note that the template includes the following placeholders"
+
+* "GOOGLE_MAPS_API_STRING"
+* "DESTINATIONS_COLLECTION"
+* "FLIGHTPATHS_COLLECTION"
