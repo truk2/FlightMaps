@@ -32,7 +32,7 @@ As this strings variables are used in 'Find/Replace' opperations they MUST NOT B
 
 
 
-# "GOOGLE_MAPS_API_STRING"
+## "GOOGLE_MAPS_API_STRING"
 This placeholder must be replaced with a string in the form:
 "https://maps.googleapis.com/maps/api/js?key=INSERT_KEY_HERE"
 
@@ -40,7 +40,7 @@ example of use:
 <script async defer src="GOOGLE_MAPS_API_STRING&callback=initMap">
 
 
-#"DESTINATIONS_COLLECTION"
+## "DESTINATIONS_COLLECTION"
 
 This variable represents a collection of locations as terminal points for the included flights (ie Airports) in Json format. IE:
 
@@ -49,7 +49,7 @@ This variable represents a collection of locations as terminal points for the in
 {name: "NAME3", coordinates: {lat: xx.xxxxx, lng: yy.yyyyy}]
 
 
-# "FLIGHTPATHS_COLLECTION"
+## "FLIGHTPATHS_COLLECTION"
 This variable represents a collect of pairs of locations from the DESTINATIONS_COLLECTION that will have routes plotted on the maps
 This collection should be in Json format and include required line thickness as defined below:
 
