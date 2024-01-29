@@ -53,9 +53,10 @@ example of use:
 -------------------------
 This variable represents a collection of locations as terminal points for the included flights (ie Airports) in Json format. IE:
 
-[{name: "NAME1", coordinates: {lat: xx.xxxxx, lng: yy.yyyyy},
-{name: "NAME2", coordinates: {lat: xx.xxxxx, lng: yy.yyyyy},
-{name: "NAME3", coordinates: {lat: xx.xxxxx, lng: yy.yyyyy}]
+[{name: "NAME1", coordinates: {lat: xx.xxxxx, lng: yy.yyyyy},  
+{name: "NAME2", coordinates: {lat: xx.xxxxx, lng: yy.yyyyy},  
+{name: "NAME3", coordinates: {lat: xx.xxxxx, lng: yy.yyyyy},  
+...]
 
 
 "FLIGHTPATHS_COLLECTION"
@@ -63,9 +64,10 @@ This variable represents a collection of locations as terminal points for the in
 This variable represents a collect of pairs of locations from the DESTINATIONS_COLLECTION that will have routes plotted on the maps
 This collection should be in Json format and include required line thickness as defined below:
 
-[{origin: destinations[x_].coordinates, destination: destinations[x_].coordinates, lineThickness: z1},
-{origin: destinations[x_].coordinates, destination: destinations[x_].coordinates, lineThickness: z2},
-{origin: destinations[x_].coordinates, destination: destinations[x_].coordinates, lineThickness: z3}]
+[{origin: destinations[x_].coordinates, destination: destinations[x_].coordinates, lineThickness: z1},  
+{origin: destinations[x_].coordinates, destination: destinations[x_].coordinates, lineThickness: z2},  
+{origin: destinations[x_].coordinates, destination: destinations[x_].coordinates, lineThickness: z3},  
+...]
 
 where x_ is any valid index in the DESTINATIONS_COLLECTION
 where z_ is any valid integer or double value representing the required line thickness.
